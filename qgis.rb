@@ -17,8 +17,8 @@ end
 
 class Qgis < Formula
   homepage 'http://www.qgis.org'
-  url 'http://qgis.org/downloads/qgis-1.8.0.tar.bz2'
-  sha1 '99c0d716acbe0dd70ad0774242d01e9251c5a130'
+  url 'http://qgis.org/downloads/qgis-2.0.1.tar.bz2'
+  sha1 '20854740bc17bae530cbbcefc7a2c7df6ebb5f30'
 
   head 'https://github.com/qgis/Quantum-GIS.git', :branch => 'master'
 
@@ -29,6 +29,7 @@ class Qgis < Formula
   depends_on 'gsl'
   depends_on 'pyqt'
   depends_on 'qwt'
+  depends_on 'qscintilla2'
   depends_on 'expat'
   depends_on 'gdal'
   depends_on 'proj'
