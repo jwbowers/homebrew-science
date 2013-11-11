@@ -1,7 +1,8 @@
 require 'formula'
 
 class PyQtImportable < Requirement
-  fatal true
+  ## fatal true
+  ## this next works fine at the command line but fails in ruby
   satisfy { quiet_system 'python', '-c', 'from PyQt4 import QtCore' }
 
   def message
